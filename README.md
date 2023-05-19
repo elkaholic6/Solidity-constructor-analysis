@@ -5,6 +5,7 @@ This script allows you to find and analyze constructors in Solidity contracts. I
 
 ## Prerequisites
 Node.js and npm should be installed on your system.
+
 ## Installation
 1. Copy-paste the script into a separate file in the project you want to scan on the code editor of your choice.
 - **Note:** In the example on this page, the script is in the same directory as the contract to be tested, in a separate file named `script.js`.
@@ -27,6 +28,7 @@ node script.js
 4. Once the analysis is complete, the script will display the information about each constructor found in the specified file(s). It includes details such as the file name, presence of 0 address checks, constructor arguments, and the constructor code.
 - If the constructor code includes == address(0), it indicates the potential existence of a check for a 0 address.
 - If the constructor code does not include any checks for a 0 address, it will display a message indicating the absence of such checks.
+- 
 ## Example
 Here is an example of running the script:
 ```
@@ -54,5 +56,9 @@ Code: projectToken = _projectToken;
 - The script uses regular expressions to identify constructors in the Solidity files. Ensure that your Solidity code follows standard formatting for constructors for accurate results.
 - The script requires appropriate read permissions to access the specified file(s) or folder.
 - The script is provided as-is and may require modification or further customization based on your specific requirements.
+
+## Acknowledgements
+This script is a JavaScript adaptation of the original Python script created by pxng0lin (https://github.com/pxng0lin/python-tools). I would like to express my gratitude for their work and contribution to the community.
+
 ## License
 This script is licensed under the MIT License. Feel free to use, modify, and distribute it according to the terms of the license.
