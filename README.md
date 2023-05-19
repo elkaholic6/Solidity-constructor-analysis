@@ -16,7 +16,9 @@ npm install readline colors
 ## Usage
 1. Open the terminal and navigate to the directory that contains both the script and the contract.
 - **Example:**
-```cd contracts```
+```
+cd contracts
+```
 2. Run the following command to execute the script:
 ```
 node script.js
