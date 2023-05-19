@@ -7,7 +7,7 @@ This script allows you to find and analyze constructors in Solidity contracts. I
 Node.js and npm should be installed on your system.
 ## Installation
 1. Copy-paste the script into a separate file in the project you want to scan on the code editor of your choice.
-- **Note:** In the example on this page, the script is in the same directory as the contract to be tested, in a separate file named `script.js`.
+**Note:** In the example on this page, the script is in the same directory as the contract to be tested, in a separate file named `script.js`.
 2. Make sure to have installed the remaining dependencies.
 ```
 npm install readline colors
@@ -15,7 +15,7 @@ npm install readline colors
 
 ## Usage
 1. Open the terminal and navigate to the directory that contains both the script and the contract.
-- **Example:**
+**Example:**
 ```cd contracts```
 2. Run the following command to execute the script:
 ```
