@@ -10,7 +10,6 @@ Node.js and npm should be installed on your system.
 2. Open a terminal and navigate to the script's directory.
 3. Run the following command to install the required dependencies:
 ```
-Copy code
 npm install
 ```
 ## Usage
