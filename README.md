@@ -58,7 +58,7 @@ Code: projectToken = _projectToken;
 - The script is provided as-is and may require modification or further customization based on your specific requirements.
 
 ## Acknowledgements
-This script is a JavaScript adaptation of the original Python script created by pxng0lin (https://github.com/pxng0lin/python-tools). I would like to express my gratitude for their work and contribution to the community.
+This script is a JavaScript adaptation of the original Python script created by pxng0lin (https://github.com/pxng0lin/python-tools).
 
 ## License
 This script is licensed under the MIT License. Feel free to use, modify, and distribute it according to the terms of the license.
