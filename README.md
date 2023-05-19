@@ -6,14 +6,17 @@ This script allows you to find and analyze constructors in Solidity contracts. I
 ## Prerequisites
 Node.js and npm should be installed on your system.
 ## Installation
-1. Clone the repository or download the script file directly.
-2. Open a terminal and navigate to the script's directory.
-3. Run the following command to install the required dependencies:
+1. Copy-paste the script into a separate file in the project you want to scan on the code editor of your choice.
+- **Note:** In the example on this page, the script is in the same directory as the contract to be tested, in a separate file named `script.js`.
+2. Make sure to have installed the remaining dependencies.
 ```
-npm install
+npm install readline colors
 ```
+
 ## Usage
-1. Open a terminal and navigate to the script's directory.
+1. Open the terminal and navigate to the directory that contains both the script and the contract.
+- **Example:**
+```cd contracts```
 2. Run the following command to execute the script:
 ```
 node script.js
@@ -26,9 +29,24 @@ node script.js
 Here is an example of running the script:
 ```
 $ node script.js
-Enter file path or folder: contracts/
+Enter file path or folder: ./
 ```
-In this case, the script will analyze all Solidity files within the contracts/ directory and display the information about the constructors found.
+In this case, the script will analyze all Solidity files within the same directory and display the information about the constructors found.
+**Example output:**
+```
+Constructor in JBXBuybackDelegate.sol:
+No checks for 0 address exist
+Arguments: IERC20 _projectToken,
+        IWETH9 _weth,
+        IUniswapV3Pool _pool,
+        IJBPayoutRedemptionPaymentTerminal3_1 _jbxTerminal
+Code: projectToken = _projectToken;
+        pool = _pool;
+        jbxTerminal = _jbxTerminal;
+        _projectTokenIsZero = address(_projectToken) < address(_weth);
+        weth = _weth;
+==============================
+```
 
 ## Notes
 - The script uses regular expressions to identify constructors in the Solidity files. Ensure that your Solidity code follows standard formatting for constructors for accurate results.
